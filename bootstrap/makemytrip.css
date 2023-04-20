@@ -1,0 +1,37 @@
+.nav-background {
+    background-image: url("https://i.pinimg.com/originals/a6/db/41/a6db418f8f51da21c84a9e4e7360a14c.jpg" );
+    background-size: cover;
+    display: flex;
+    justify-content: baseline;
+    height: 100%;
+
+}
+.navh{
+    height: 120px;
+}
+.fbimg{
+    width: 40px !important;
+    margin: auto;
+}
+.bgbclr{
+    background-color: rgb(66, 66, 66) !important;
+}
+.transparent{
+    filter: opacity(50%);
+}
+.frontDiv{
+    z-index: 3;
+}
+.link-all{
+ color: purple;
+ font-weight: bold;
+}
+.div-temp{
+    height: 300px;
+}
+.democlr{
+    background-color: rgb(231, 231, 231) !important;
+}
+.minbw{
+    min-width: min-content;
+}

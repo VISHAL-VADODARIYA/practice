@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                        aria-label="Main menu" aria-expanded="false" id="main-menu">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Menu -->
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex">
+                            <a href="#"
+                                class="px-3 py-2 rounded-md text-sm font-medium leading-5 text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Home</a>
+                            <a href="#"
+                                class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Portfolio</a>
+                            <a href="#"
+                                class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">About</a>
+                            <a href="#"
+                                class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="sm:hidden" id="main-menu-mobile">
+            <div class="px-2 pt-2 pb-3">
+                <a href="#"
+                    class="block px-3 py-2 rounded-md text-base font-medium leading-5 text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Home</a>
+                <a href="#"
+                    class="mt-1 block px-3 py-2 rounded-md text-base font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Portfolio</a>
+                <a href="#"
+                    class="mt-1 block px-3 py-2 rounded-md text-base font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">About</a>
+
+
+                <!-- Main content section -->
+                <main class="container mx-auto py-10 px-6">
+                    <h1 class="text-4xl font-bold mb-10">Welcome to my Photography Portfolio</h1>
+
+                    <div class="grid grid-cols-3 gap-4">
+                        <!-- Image grid -->
+                        <div class="col-span-2">
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="col-span-3 md:col-span-2">
+                                    <img src="https://source.unsplash.com/random/800x600"
+                                        alt="Photography portfolio image" class="w-full h-full object-cover">
+                                </div>
+                                <div class="col-span-3 md:col-span-1">
+                                    <img src="https://source.unsplash.com/random/400x600"
+                                        alt="Photography portfolio image" class="w-full h-full object-cover">
+                                </div>
+                                <div class="col-span-3 md:col-span-1">
+                                    <img src="https://source.unsplash.com/random/400x600"
+                                        alt="Photography portfolio image" class="w-full h-full object-cover">
+                                </div>
+                                <div class="col-span-3 md:col-span-1">
+                                    <img src="https://source.unsplash.com/random/400x600"
+                                        alt="Photography portfolio image" class="w-full h-full object-cover">
+                                </div>
+                                <div class="col-span-3 md:col-span-2">
+                                    <img src="https://source.unsplash.com/random/800x600"
+                                        alt="Photography portfolio image" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="w-full lg:w-1/4 px-6 text-xl text-gray-800 leading-normal">
+                        <div class="sticky top-0">
+                            <h2 class="font-bold text-2xl mb-4">Categories</h2>
+                            <div class="flex flex-wrap mt-8">
+                                <a href="#" class="w-full lg:w-1/2 p-4">
+                                    <div class="bg-white hover:bg-gray-100 border border-gray-200 rounded p-2">
+                                        <div class="flex items-center">
+                                            <div class="w-10 h-10 bg-gray-400 rounded-full mr-2"></div>
+                                            <div class="text-sm">
+                                                <p class="font-bold text-gray-900">Landscape</p>
+                                                <p class="text-gray-600">1024 photos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="w-full lg:w-1/2 p-4">
+                                    <div class="bg-white hover:bg-gray-100 border border-gray-200 rounded p-2">
+                                        <div class="flex items-center">
+                                            <div class="w-10 h-10 bg-gray-400 rounded-full mr-2"></div>
+                                            <div class="text-sm">
+                                                <p class="font-bold text-gray-900">Portraits</p>
+                                                <p class="text-gray-600">768 photos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="w-full lg:w-1/2 p-4">
+                                    <div class="bg-white hover:bg-gray-100 border border-gray-200 rounded p-2">
+                                        <div class="flex items-center">
+                                            <div class="w-10 h-10 bg-gray-400 rounded-full mr-2"></div>
+                                            <div class="text-sm">
+                                                <p class="font-bold text-gray-900">Nature</p>
+                                                <p class="text-gray-600">512 photos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="w-full lg:w-1/2 p-4">
+                                    <div class="bg-white hover:bg-gray-100 border border-gray-200 rounded p-2">
+                                        <div class="flex items-center">
+                                            <div class="w-10 h-10 bg-gray-400 rounded-full mr-2"></div>
+                                            <div class="text-sm">
+                                                <p class="font-bold text-gray-900">Street</p>
+                                                <p class="text-gray-600">256 photos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="w-full lg:w-1/2 p-4">
+                                    <div class="bg-white hover:bg-gray-100 border border-gray-200 rounded p-2">
+                                        <div class="flex items-center">
+                                            <div class="w-10 h-10 bg-gray-400 rounded-full mr-2"></div>
+                                            <div class="text-sm">
+                                                <p class="font-bold text-gray-900">Abstract</p>
+                                                <p class="text-gray-600">128 photos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navbar -->

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+
+  <body>
+    <div><ul></ul></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        let productDetail = [
+          { productId: 1, Name: 'Entertaiment', parentId: null },
+          { productId: 2, Name: 'Food', parentId: null },
+          { productId: 3, Name: 'Toy', parentId: 1 },
+          { productId: 4, Name: 'Speaker', parentId: 1 },
+          { productId: 5, Name: 'Milk', parentId: 2 },
+          { productId: 6, Name: 'Vagetables', parentId: 2 },
+        ];
+
+        $(productDetail).each((index, data) => {
+          if (data.parentId == null) {
+            $('<li></li>')
+              .text(data.Name)
+              .attr('id', data.productId)
+              .appendTo('ul');
+          } if(data.parentId !== null) {
+            $('<ul><li></li></ul>')
+              .text(data.Name)
+              .attr('id', data.productId)
+              .appendTo(`#${data.parentId}`);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

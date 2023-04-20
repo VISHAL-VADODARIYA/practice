@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>hello dear</div>
+    <button>click here</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+
+            // load method
+        // $('button').click(function () {
+        //     var data;
+        //     $('div').load('https://gorest.co.in/public/v2/users', data, function (data) {
+        //         var abvc = JSON.parse(data);
+        //         for (i of abvc) {
+        //             console.log(i.email);
+        //         }
+
+        //         var str = JSON.stringify(abvc);
+        //         console.log(str);
+        //         $('div').empty();
+        //     });
+        // })
+
+        //     // get method
+        $(document).ready(function () {
+            $("button").click(function () {
+                $.get("index.txt", function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

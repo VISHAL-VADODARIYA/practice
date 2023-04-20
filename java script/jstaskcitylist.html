@@ -1,0 +1,78 @@
+javascript task code
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        let data = [{
+            item: 'Gujarat',
+            subitems: ['Rajkot', 'Ahmedabad', 'Junagadh', 'Surat']
+        },
+        {
+            item: 'Maharashtra',
+            subitems: ['Pune', 'Mumbai', 'Thane', 'Shirdi']
+        },
+        {
+            item: 'Rajsthan',
+            subitems: ['Jaipur', 'Udaipur', 'Kota', 'Ajmer']
+        },
+        {
+            item: 'Madhya Pradesh',
+            subitems: ['Indore', 'Bhopal', 'Jabalpur', 'Gwalior'],
+        },
+        ];
+
+
+        window.onload = function () {
+            var itemSelect = document.getElementById("state");
+            var subitemSelect = document.getElementById("city");
+
+            for (var x in data) {
+                itemSelect.options[itemSelect.options.length] = new Option(data[x].item, x);
+            }
+            itemSelect.onchange = function () {
+                //empty 
+                subitemSelect.length = 1;
+                //display correct values
+                for (var y of data[this.value].subitems) {
+                    subitemSelect.options[subitemSelect.options.length] = new Option(y, y);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <main>
+        <!-- content will be built here by javascript -->
+        <h2>Select State to get according city name list</h2>
+        <table>
+            <tr>
+                <td>
+                    <label for="state">State List</label>
+                </td>
+                <td> : </td>
+                <td>
+                    <select id="state" name="state">
+                        <option value="" selected="selected">Please select state</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">City List</label>
+                </td>
+                <td> : </td>
+                <td>
+                    <select id="city" name="city">
+                        <option value="" selected="selected">Please select city</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+</body>
+
+</html>

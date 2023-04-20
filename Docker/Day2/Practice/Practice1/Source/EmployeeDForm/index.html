@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- <script type="module" src="/main.js"></script> -->
+
+    <h1>Employee Form</h1>
+    <table><caption> </caption>
+        <form>
+        <th></th>
+        
+
+        <tr>
+            <td>
+                <label for="name"> Name :</label>
+            </td>
+            <td>
+                <input type="text" id="name" required>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label for="age"> Age :</label>
+            </td>
+            <td>
+                <input type="number" id="age" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Gender"> Gender :</label>
+            </td>
+            <td><input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female"> Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="designation"> Designation :</label>
+            </td>
+            <td>
+                <input type="text" id="designation" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="salary"> Salary :</label>
+            </td>
+            <td>
+                <input type="number" id="salary" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="city">Location :</label>
+            </td>
+            <td>
+                <select name="loaction" id="city">
+                    <option value="ahmedabad">Ahmedabad</option>
+                    <option value="broda">Broda</option>
+                    <option value="chandkheda">Chandkheda</option>
+                    <option value="rajkot">Rajkot</option>
+                    <option value="junagadh">Junagadh</option>
+                    <option value="jamnagar">Jamnagar</option>
+                    <option value="dwarka">Dwarka</option>
+                    <option value="vapi">Vapi</option>
+                    <option value="surat">Surat</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email"> EmailID :</label>
+            </td>
+            <td>
+                <input type="email" id="email" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="doj"> Date Of Joining :</label>
+            </td>
+            <td>
+                <input type="date" id="doj" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="contact"> Contact No. :</label>
+            </td>
+            <td>
+                <input type="tel" id="contact" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="submit">
+            </td>
+        </tr>
+
+
+    </form>
+    </table>
+
+  </body>
+</html>

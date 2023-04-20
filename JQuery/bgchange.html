@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cc">Disco party</div>
+    
+    <p style="float: left" id="p1">A </p>
+    <p style="float: left" id="p2">B </p>
+    <p style="float: left" id="p3">C </p>
+    <p style="float: left" id="p4">D </p>
+    <p style="float: left" id="p5">E </p>
+    <p style="float: left" id="p6">F </p>
+    <p style="float: left" id="p7">G </p>
+    <p style="float: left" id="p8">H </p>
+    <p style="float: left" id="p9">I </p>
+    <p style="float: left" id="p10">J </p>
+    <p style="float: left" id="p11">K </p>
+    <p style="float: left" id="p12">L  </p>
+    <p style="float: left" id="p13">M </p>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            for(var i =0; i<14; i++){
+                $(`#p${i}`).hover(function() {
+                    $(this).hide(500,function(){$(this).show(500)})
+                });
+                
+            }
+        });  
+    </script>
+</body>
+
+</html>

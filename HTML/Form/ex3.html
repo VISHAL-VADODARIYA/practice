@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+    <link rel="stylesheet" href="mystyles.css">    
+    <title>FORMS</title>
+</head>
+<body>
+    
+    <form id="myform"><br>
+        <h2>Date input</h2>
+        <label for="date-input"> please choose a date : </label>
+        <input type="date" id="date-input" />
+
+        <h2>time input</h2>
+        <label for="time-input"> please choose a time : </label>
+        <input type="time" id="time-input" />
+
+        <h2>Month input</h2>
+        <label for="month-input"> please choose a month : </label>
+        <input type="month" id="month-input" />
+
+        <h2>Week input</h2>
+        <label for="week-input"> please choose a week : </label>
+        <input type="week" id="week-input" />
+
+        <h2>Range</h2>
+        <label for="range-data"> Range : </label>
+        <input type="range" id="range-data" min="1" max="10" />
+
+        <h2>placeholder</h2>
+        <label for="search-data"> Search : </label>
+        <input type="search" id="search-data" placeholder="hello! Entre search term" />
+
+        <h2>Telephone</h2>
+        <label for="tel-data"> Telephone : </label>
+        <input type="tel" id="tel-data" required />
+
+        <input type="submit" value="submit">
+
+        <h2>Email</h2>
+        <label for="eamil-data"> Email : </label>
+        <input type="email" id="email" required multiple>
+
+        <h2>Color picker</h2>
+        <input type="color" id="color-data" />
+
+        <h2>Data List </h2>
+        <label for="list-data">Data List :</label>
+        <input type="text" list="myDataList">
+        <datalist id="myDataList">
+            <option label="Mr." value="Mr."></option>
+            <option label="Mrs." value="Mrs."></option>
+            <option label="Ms." value="Ms."></option>
+        </datalist>
+
+        <h2>Progress Bar</h2>
+        <label for="progress-data">Progress Bar :</label>
+        <progress value="5" max="15"></progress>
+
+        <h2>Meter</h2>
+        <label for="meter-data"> Meter :</label>
+        <meter id="meter-data" min="10" max="100" value="50" low="20" high="70" optimum="50" >
+
+
+    </form>
+
+        <h2>Outside Text Form</h2>
+        <label for="outsideText-data">Other Text:</label>
+        <input type="text" id="outsideText-data" form="myForm" >
+
+
+
+</body>
+</html>

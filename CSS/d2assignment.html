@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(228, 221, 195);
+        }
+        .container{
+            display: flex;
+            /* border: 1px solid blue; */
+            flex-wrap: wrap;
+            background-color: rgb(228, 221, 195);
+             
+        }
+        .div1{
+            
+            margin: 20px;
+            width: 400px;
+            border-radius: 10px;
+            background-color: white;
+            
+        }
+
+        .pd{
+            padding-left: 200px;
+            
+        }
+        .cd{
+            padding-left: 10px;
+            width: fit-content;
+        }
+        
+        #pimg{
+            border: 2px solid black;
+            border-radius: 50%;
+            float: left;
+            height: 70px;
+            margin: 20px;
+            width: 70px;
+        }
+        #rimg{
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 35px;
+            width: 35px;
+            float: right;
+            
+        }
+        
+        a{
+            position: absolute;
+            display: block;
+            right: 0%;
+            left: 0%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <div>
+                <img src="download.jpeg" id="pimg">
+            </div>
+            <div class="pd">
+                <p>Student id: 001</p>
+                <p>Name : Vishal </p>
+                <p>Date Of Birth : September</p>
+            </div>
+            <div>
+                <div class="cd">
+                <p>College name: ABCD</p>
+                <p>College address: write address here </p>
+                <img src="download.jpeg" id="rimg">
+            </div>
+            <a href="showmore.html"><u>Show More</u></a>
+            </div>
+            
+        </div>
+        
+
+        
+        
+    </div>
+    
+</body>
+</html>

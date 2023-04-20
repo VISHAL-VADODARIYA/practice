@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {}
+
+        .containerrm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            flex: content;
+        }
+
+        img {
+            height: 150px;
+            padding: 5px;
+            border: 2px solid rgb(8, 58, 82);
+            border-radius: 50%;
+
+        }
+
+        .links {
+            padding: 10px;
+            margin: 2px;
+            border: 2px solid rgb(4, 54, 77);
+            width: 180px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .detailbar {
+            background-color: rgb(48, 127, 163);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(207, 236, 190);
+        }
+
+
+        .pagere {
+            display: none;
+            padding-left: 10px;
+        }
+
+        .pagere:target {
+            display: flex;
+        }
+
+        .detailText {
+            background-color: rgb(245, 213, 174);
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            color: saddlebrown;
+
+        }
+
+        p {}
+
+
+
+        @media only screen and (min-width:600px) {
+            .containerrm {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .links {
+                display: block;
+                /* height: 10vh; */
+            }
+
+            .detailbar {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+
+            }
+
+            .gridTab {
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+
+            }
+
+
+        }
+
+        @media only screen and (min-width:810px) {
+            .containerrm {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .links {
+                display: block;
+                /* height: 10vh; */
+            }
+
+            .detailbar {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+
+            }
+
+            .gridTab {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ;
+
+            }
+
+
+        }
+
+        @media only screen and (min-width:1000px) {
+            .containerrm {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+
+            }
+
+
+            .detailbar {
+                display: flex;
+                width: max-content;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+            }
+
+            .detailText {
+                margin-top: 0px;
+                margin-left: 10px;
+                display: flex;
+                width: 100%;
+
+            }
+
+            .gridTab {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerrm">
+        <div class="detailbar">
+            <div class="limg" id="perimg">
+                <img
+                    src="https://img.freepik.com/premium-vector/portrait-young-man-with-beard-hair-style-male-avatar-vector-illustration_266660-423.jpg?w=740">
+            </div>
+            <div class="gridTab">
+                <div class="links"><a href="#pagere1">Objective</a></div>
+                <div class="links"><a href="#pagere2">Personal Detail</a></div>
+                <div class="links"><a href="#pagere3">Educational Detail</a></div>
+                <div class="links"><a href="#pagere4">Social Accounts</a></div>
+                <div class="links"><a href="#pagere5">Skill</a></div>
+                <div class="links"><a href="#pagere6">Other</a></div>
+            </div>
+
+        </div>
+        <div class="detailText">
+            <div class="pagere" id="pagere1">
+                Over the past few years, a resume objective has, in most cases, become optional. If you’re an experienced professional, you’re much better off sticking to a Resume Summary, as it helps describe your top skills and experiences much better.
+
+
+            </div>
+            <div class="pagere" id="pagere2">
+                <div>
+                    <p> Name : Vishal Vadodariya<br>
+                        Age : 21<br>
+                        Gender : Male<br>
+                        Address :Your Address<br>
+                    </p>
+                </div>
+            </div>
+            <div class="pagere" id="pagere3">
+                <div>
+                    <p> <h2>SSC</h2><br>
+                        University Name : ABC<br>
+                        University Location : University Address<br>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="pagere" id="pagere4">
+                <div>
+                    <p> <h2>Plateform</h2><br>
+                        ABCD<br>
+                    </p>
+                    <p> <h2>Plateform</h2><br>
+                        ABCD<br>
+                    </p>
+                    <p> <h2>Plateform</h2><br>
+                        ABCD<br>
+                    </p>
+                    <p> <h2>Plateform</h2><br>
+                        ABCD<br>
+                    </p>
+
+                </div>
+            </div>
+            <div class="pagere" id="pagere5">
+                <div>
+                    <p> <h2>Skill</h2><br>
+                        ABCD<br>
+                        ABAB<br>
+                        ABAB<br>
+                        ABAB<br>
+                        ABAB<br>
+                        ABAB<br>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="pagere" id="pagere6">
+                Other information 
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

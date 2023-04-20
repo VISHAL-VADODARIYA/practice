@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h2>What is Docker? </h2>
+        <p> Docker is an open plateform for developing , shipping and running software(application) quickly. and it is
+            give the
+            seperate plateform from insfrastructure to deliver software quickly. </p>
+    </div>
+    <br>
+    <div>
+        <h2>What is Container? </h2>
+        <p> Docker provides the ability to package and run an application in a loosely isolated environment called a
+            container. Containers are lightweight and contain everything needed to run the application, so you do not
+            need to rely on what is currently installed on the host. </p>
+    </div>
+    <br>
+    <div>
+        <h2>What are Images? </h2>
+        <p>image is a read-only template with instructions for creating a Docker container.</p>
+    </div>
+    <br>
+    <div>
+        <h2>What are Nginx? </h2>
+        <p>Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP
+            protocols, as well as a load balancer, HTTP cache, and a web server (origin server). The nginx project
+            started with a strong focus on high concurrency, high performance and low memory usage.</p>
+    </div>
+    <div>
+        <h2>List any 10 docker commands and their uses</h2>
+        <ol>
+            <li><strong>docker –version</strong>
+                <dd>This command is used to get the currently installed version of docker</dd>
+            </li><br>
+            <li><strong>docker ps</strong>
+                <dd>This command is used to list the running containers</dd>
+            </li><br>
+            <li><strong>docker images</strong>
+                <dd>This command lists all the locally stored docker images</dd>
+            </li><br>
+            <li><strong>docker rm [container id]</strong>
+                <dd>This command is used to delete a stopped container</dd>
+            </li><br>
+            <li><strong>docker rmi [image-id]</strong>
+                <dd>This command is used to delete an image from local storage</dd>
+            </li><br>
+            <li><strong>docker build -t [imageName] .</strong>
+                <dd>This command is used to create an docker image</dd>
+            </li><br>
+            <li><strong>docker run -d -p [portNumber]:80 --name [containerName] [imageName]</strong>
+                <dd>This command is used to create a container from docker image</dd>
+            </li><br>
+            <li><strong>docker stop [container id]</strong>
+                <dd>This command stops a running container</dd>
+            </li><br>
+            <li><strong>docker kill [container id]</strong>
+                <dd>This command kills the container by stopping its execution immediately</dd>
+            </li><br>
+            <li><strong>docker login</strong>
+                <dd>This command is used for to login in CLI.</dd>
+            </li><br>
+            <li><strong>docker push [username/image name]</strong>
+                <dd>This command is used to push an image to the docker hub repository</dd>
+            </li><br>
+            <li><strong>docker pull [username/image name]</strong>
+                <dd>This command is used to pull an image from the docker hub repository</dd>
+            </li><br>
+        </ol>
+    </div>
+</body>
+
+</html>

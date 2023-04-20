@@ -1,0 +1,25 @@
+body {}
+
+#dataform {
+    float: left;
+    padding: 15px;
+    border: 1px solid #CCCCCC
+}
+
+#data {
+    float: left;
+    width: 400px;
+    margin-left: 10px;
+    padding: 15px;
+    border: 1px solid #CCCCCC;
+}
+
+#data > div {
+    padding: 5px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#key,
+#text {
+    width: 200px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="date"></div>
+    <button class="" id="" onclick="addition()">Addition</button>
+    <button class="" id="" onclick="substraction()">Substraction</button>
+    <button class="" id="" onclick="multiplication()">Multiplication</button>
+    <button class="" id="" onclick="division()">Division</button>
+    <script>
+      //   var date = new Date();
+      //   document.getElementById("date").innerHTML = date;
+
+
+      
+      function addition() {
+        let num1 = parseInt(prompt("Enter First Number : "));
+        let num2 = parseInt(prompt("Enter Second Number : "));
+        document.getElementById("date").innerHTML ="<strong>The answer is : </strong>" + (num1 + num2);
+      }
+      function substraction() {
+        let num1 = parseInt(prompt("Enter First Number : "));
+        let num2 = parseInt(prompt("Enter Second Number : "));
+        document.getElementById("date").innerHTML ="<strong>The answer is : </strong>" +  (num1 - num2);
+      }
+      function multiplication() {
+        let num1 = parseInt(prompt("Enter First Number : "));
+        let num2 = parseInt(prompt("Enter Second Number : "));
+        document.getElementById("date").innerHTML ="<strong>The answer is : </strong>" +  (num1 * num2);
+      }
+      function division() {
+        let num1 = parseInt(prompt("Enter First Number : "));
+        let num2 = parseInt(prompt("Enter Second Number : "));
+        document.getElementById("date").innerHTML ="<strong>The answer is : </strong>" +  (num1 / num2);
+      }
+    </script>
+  </body>
+</html>

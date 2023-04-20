@@ -1,0 +1,73 @@
+li {
+  background-color: rgb(99, 99, 99);
+  display: inline-block;
+  color: rgb(197, 197, 197);
+  padding: 10px;
+
+}
+.active{
+  background-color: rgb(90, 194, 226);
+  border-radius: 10px;
+  color: black;
+}
+
+.hlist {
+  background-color: rgb(99, 99, 99);
+  display: flex;
+  justify-content: end;
+  padding: 30px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  background-color: white;
+  box-shadow: 0px 0px 10px 1px white;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(99, 99, 99);
+  align-items: center;
+  border-bottom: 3px solid rgb(90, 194, 226);
+}
+#lmenu a{
+  color: rgb(197, 197, 197);
+  text-decoration: none;
+}
+.whtext{
+  padding: 50px;
+  text-align: center;
+}
+h6{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home{
+  margin-top: 50px;
+  background-color: rgb(99, 99, 99);
+  border-radius: 10px;
+  display: block;
+  
+  width: 60%;
+  
+  
+  
+}
+#homeimg{
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.sidebar {
+  margin-top: 10px;
+  height: 100%;
+  width: 33%;
+  background-color: rgb(99, 99, 99);
+  padding: 15px;
+}

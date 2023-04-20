@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dem"></div>
+    <div id="dem1"></div>
+    <div id="dem2"></div>
+    
+<script>
+        let f =({ a: 1, b: 2 });
+        let s =({ shrimp: 15, tots: 12 })
+        let t =({})
+
+        let z = Object.entries(f);
+        let j = JSON.stringify(z);
+        document.getElementById('dem').innerHTML = j; 
+        let q = Object.entries(s);
+        let h = JSON.stringify(q);
+        document.getElementById('dem1').innerHTML = h; 
+        let k = Object.entries(t);
+        let o = JSON.stringify(k);
+        document.getElementById('dem2').innerHTML = o; 
+</script>
+
+</body>
+</html>

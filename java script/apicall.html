@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        function createTable(result){
+            var tab = "<table border=1><tr><th>id</th><th>name</th><th>email</th><th>gender</th><th>status</th></tr>";
+               
+                for(var i in result){
+             tab += `<tr><td>${result[i].id}</td><td>${result[i].name}</td><td>${result[i].email}</td><td>${result[i].gender}</td><td>${result[i].status}</td></tr>`;
+                }
+                tab += '</table>';
+            document.getElementById("demo").innerHTML = tab;
+        }
+        function get() {
+            var myHeaders = new Headers();
+            myHeaders.append("Authorization", "Bearer 03782aa91f29df94b983207f22f9835f128a4c3513e8c18bb540f63777a2811e");
+            myHeaders.append("Content-Type", "application/json");
+
+            var raw = JSON.stringify({
+                "name": "Tenali Ramakrishna",
+                "gender": "male",
+                "email": "tenali.ramakrishna@15ce.com",
+                "status": "active"
+            });
+
+            var requestOptions = {
+                method: 'GET',
+                headers: myHeaders,
+                redirect: 'follow'
+            };
+
+            fetch("https://gorest.co.in/public/v2/users", requestOptions)
+                .then(response => response.json())
+                .then(result => createTable(result))
+                .catch(error => console.log('error', error));
+        }
+        get();
+        
+    </script>
+
+</body>
+
+</html>

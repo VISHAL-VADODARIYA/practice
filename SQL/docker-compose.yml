@@ -1,0 +1,126 @@
+version: '3'
+ 
+services:
+  db:
+    image: mysql:5.7
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: rdx
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+    ports:
+      - "6033:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    links:
+      - db
+    ports:
+      - 8080:8978
+    environment:
+      CLOUDBEAVER_SERVER_DATABASE_DRIVER_CLASS_NAME: com.mysql.jdbc.Driver
+      CLOUDBEAVER_SERVER_DATABASE_URL: jdbc:mysql://db:6033/rdx
+      CLOUDBEAVER_SERVER_DATABASE_USERNAME: root
+      CLOUDBEAVER_SERVER_DATABASE_PASSWORD: root
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+volumes:
+  dbdata:
+
+
+
+# version: '3'
+# services:
+#   db:
+#     image: postgres:13
+#     environment:
+#       POSTGRES_USER: example
+#       POSTGRES_PASSWORD: example
+#       POSTGRES_DB: test
+#     volumes:
+#       - ./postgresql:/var/lib/postgresql/data
+#     ports:
+#       - 5432:5432
+#   cloudbeaver:
+#     image: dbeaver/cloudbeaver:latest
+#     ports:
+#       - 8080:8978
+#     depends_on:
+#       - db
+#     environment:
+#       CLOUDBEAVER_SERVER_DATABASE_DRIVER_CLASS_NAME: org.postgresql.Driver
+#       CLOUDBEAVER_SERVER_DATABASE_URL: jdbc:postgresql://db:5432/test
+#       CLOUDBEAVER_SERVER_DATABASE_USERNAME: example
+#       CLOUDBEAVER_SERVER_DATABASE_PASSWORD: example
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# version: '3'
+# services:
+#   db:
+#     image: mysql:5.7
+#     environment:
+#       MYSQL_ROOT_PASSWORD: example
+#       MYSQL_DATABASE: root
+#     volumes:
+#       - ./mysql:/var/lib/mysql
+#     ports:
+#       - 33060:33060
+#   cloudbeaver:
+#     image: dbeaver/cloudbeaver:latest
+#     ports:
+#       - 8080:8978
+#     depends_on:
+#       - db
+#     environment:
+#       CLOUDBEAVER_SERVER_DATABASE_DRIVER_CLASS_NAME: com.mysql.jdbc.Driver
+#       CLOUDBEAVER_SERVER_DATABASE_URL: jdbc:mysql://db:3306/root
+#       CLOUDBEAVER_SERVER_DATABASE_USERNAME: root
+#       CLOUDBEAVER_SERVER_DATABASE_PASSWORD: example
+
+# version: '3'
+# services:
+#   dbd:
+#     image: mcr.microsoft.com/mssql/server:2022-latest
+#     environment:
+#       SA_PASSWORD: example
+#       ACCEPT_EULA: Y
+#       MSSQL_PID: Developer
+#     ports:
+#       - 1433:1433
+#   cloudbeaver:
+#     image: dbeaver/cloudbeaver:latest
+#     ports:
+#       - 8080:8978
+#     depends_on:
+#       - dbd
+#     environment:
+#       CLOUDBEAVER_SERVER_DATABASE_DRIVER_CLASS_NAME: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#       CLOUDBEAVER_SERVER_DATABASE_URL: jdbc:sqlserver://db:1433
+#       CLOUDBEAVER_SERVER_DATABASE_USERNAME: sa
+#       CLOUDBEAVER_SERVER_DATABASE_PASSWORD: example

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>jQuery Calculator</title>
+</head>
+
+<body>
+    <div class="calc border grid p-3 bg-yellow-200 w-72 text-center align-content-center border-green-600 border-2"><span class="pb-3 text-xl font-bold text-yellow-900">Calculator</span>
+        <form name="">
+            <input type="text" class="calc-display border border-2 border-green-600 border-rounded text-right mb-2">
+        </form>
+
+        <table class="">
+            <tr>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="+/-"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="%"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="<" onclick="del()"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="C" onclick="c()"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="7" onclick="insrt(7)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="8" onclick="insrt(8)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="9" onclick="insrt(9)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="/" onclick="insrt('/')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="4" onclick="insrt(4)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="5" onclick="insrt(5)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="6" onclick="insrt(6)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="X" onclick="insrt('*')"></td>
+
+            </tr>
+
+            <tr>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="1" onclick="insrt(1)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="2" onclick="insrt(2)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="3" onclick="insrt(3)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="-" onclick="insrt('-')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="." onclick="insrt('.')"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="0" onclick="insrt(0)"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="=" onclick="eql('=')"></td>
+                <td><input type="button" class="w-10 bg-gray-300 rounded p-1 mx-3 my-1" value="+" onclick="insrt('+')"></td>
+            </tr>
+
+        </table>
+    </div>
+    <script>
+        function insrt(num) {
+            $('.calc-display').val($('.calc-display').val() + num);
+        }
+        function eql() {
+            $('.calc-display').val(eval($('.calc-display').val()));
+        }
+        function c() {
+            $('.calc-display').val('');
+        }
+        function del() {
+            value = $('.calc-display').val();
+            $('.calc-display').val(value.substring(0, value.length - 1));
+        }
+    </script>
+
+</body>
+
+</html>

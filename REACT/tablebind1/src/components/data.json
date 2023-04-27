@@ -1,0 +1,42 @@
+[
+  {
+    "UserName": "Viral Patel",
+    "Department": "Computer Science",
+    "MarksObtained": {
+      "ComputerNetworks": 85,
+      "DBMS": 89,
+      "AI": 90,
+      "Pyhton Programming": 86
+    }
+  },
+  {
+    "UserName": "Krunal Chauhan",
+    "Department": "Information Technology",
+    "MarksObtained": {
+      "ComputerNetworks": 85,
+      "DBMS": 83,
+      "AI": 82,
+      "Pyhton Programming": 81
+    }
+  },
+  {
+    "UserName": "Saumya Shah",
+    "Department": "Computer Science",
+    "MarksObtained": {
+      "ComputerNetworks": 69,
+      "DBMS": 65,
+      "AI": 67,
+      "Pyhton Programming": 72
+    }
+  },
+  {
+    "UserName": "Nisarg Patel",
+    "Department": "Information Technology",
+    "MarksObtained": {
+      "ComputerNetworks": 50,
+      "DBMS": 45,
+      "AI": 35,
+      "Pyhton Programming": 40
+    }
+  }
+]

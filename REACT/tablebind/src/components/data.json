@@ -1,0 +1,105 @@
+[
+  {
+    "SellerDetails": {
+      "SellerName": "Ravi Gupta",
+      "SellerAddress": "Surdhara Complex, Naranpura",
+      "City": "Ahmedabad",
+      "State": "Gujarat",
+      "Zip": 382481,
+      "Phone": 8989898989,
+      "Email": "seller@gmail.com"
+    },
+    "BuyerDetails": {
+      "CompanyName": "Radixweb",
+      "Name": "Nitish Patel",
+      "Address": "B/H Nirma University, Ekyarth, Near Vandemataram Fabula, Malabar County Rd",
+      "City": "Ahmedabad",
+      "State": "Gujarat",
+      "Zip": 382481,
+      "Phone": 98989898,
+      "Email": "buyer@gmail.com"
+    },
+    "ItemDetails": [
+      {
+        "ItemName": " Item1",
+        "Description": "Description",
+        "Quntity": 1,
+        "Price": "$100",
+        "Tax": "10%",
+        "Amount": "$110"
+      },
+      {
+        "ItemName": " Item2",
+        "Description": "Description",
+        "Quntity": 1,
+        "Price": "$200",
+        "Tax": " 20%",
+        "Amount": "$240"
+      },
+      {
+        "ItemName": "Item3",
+        "Description": "Description",
+        "Quntity": 3,
+        "Price": "$300",
+        "Tax": "10%",
+        "Amount": "$990"
+      },
+      {
+        "ItemName": " Item4",
+        "Description": "Description",
+        "Quntity": 1,
+        "Price": "$400",
+        "Tax": "10%",
+        "Amount": "$440"
+      },
+      {
+        "ItemName": " Item5",
+        "Description": "Description",
+        "Quntity": 1,
+        "Price": "$500",
+        "Tax": "10%",
+        "Amount": "$550"
+      },
+      {
+        "ItemName": " Item6",
+        "Description": "Description",
+        "Quntity": 2,
+        "Price": "$600",
+        "Tax": "10%",
+        "Amount": "$1320"
+      },
+      {
+        "ItemName": " Item7",
+        "Description": "Description",
+        "Quntity": 1,
+        "Price": "$700",
+        "Tax": "10%",
+        "Amount": "$770"
+      },
+      {
+        "ItemName": " Item8",
+        "Description": "Description",
+        "Quntity": 1,
+        "Price": "$800",
+        "Tax": "10%",
+        "Amount": "$880"
+      },
+      {
+        "ItemName": " Item9",
+        "Description": "Description",
+        "Quntity": 1,
+        "Price": "$900",
+        "Tax": "15%",
+        "Amount": "$1035"
+      },
+      {
+        "ItemName": " Item10",
+        "Description": "Description",
+        "Quntity": 1,
+        "Price": "$450",
+        "Tax": "10%",
+        "Amount": "$495"
+      }
+    ]
+  }
+]

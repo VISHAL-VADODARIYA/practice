@@ -1,8 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
-import Navbar from "./Navbar";
 import axios from "axios";
 
-export default function Home() {
+export default function Home({ login }) {
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -13,8 +12,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Navbar />
-      <div className="container mx-auto w-max pt-5">
+      <div className="mx-auto w-max pt-5">
         <div className="grid grid-cols-4 gap-5">
           {data &&
             data.map((i) => {
@@ -22,7 +20,7 @@ export default function Home() {
                 <div className="overflow-hidden border border-0 rounded-md">
                   <img
                     src={i.image}
-                    className="object-contain"
+                    className="object-contain overflow-hidden border border-1 w-32 h-32 bg-white"
                     width="300px"
                     height="30px"
                   />

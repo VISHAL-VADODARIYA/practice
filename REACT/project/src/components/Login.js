@@ -1,13 +1,34 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React, { useEffect, useState } from "react";
 
-export default function Login() {
+export default function Login({ setLogin }) {
+  var password;
+  var passcode;
+  const [loginData, setLoginData] = useState({
+    name: "",
+    password: Math.floor(Math.random() * 9999 + 1),
+  });
+  useEffect(() => {
+    console.log(loginData.password);
+  }, []);
+
+  const verify = (e) => {
+    e.preventDefault();
+    const email = e.target[0].value;
+    var password = e.target[1].value;
+    if (+password === loginData.password) {
+      console.log(loginData);
+      setLoginData({ name: email, password: password });
+      setLogin({ isLogin: true, username: email });
+      console.log("login");
+      e.target[0].value = "";
+      e.target[1].value = "";
+    }
+  };
   return (
     <>
-      <Navbar />
       <div className="flex justify-center mt-20">
         <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-xl sm:p-6 md:p-8 ">
-          <form class="space-y-6" action="#">
+          <form class="space-y-6" action="#" onSubmit={verify}>
             <h5 class="text-2xl font-bold text-pink-700">Log In</h5>
             <div>
               <label

@@ -20,15 +20,15 @@ function App() {
       <Router>
         <Navbar login={login} />
         <Routes>
-          {/* {login.isLogin ? ( */}
+          {login.isLogin ? (
           <Route exact path="/" element={<Home />}></Route>
-          {/* ) : (
+          ) : (
             <Route
               exact
               path="/"
               element={<Login setLogin={setLogin} />}
             ></Route>
-          )} */}
+          )} 
           <Route
             exact
             path="/login"
@@ -46,7 +46,7 @@ function App() {
               <Womenswear cartData={cartData} setCartData={setCartData} />
             }
           ></Route>
-          <Route
+          <Route  
             exact
             path="/Jewelery"
             element={<Jewelery cartData={cartData} setCartData={setCartData} />}

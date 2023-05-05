@@ -1,0 +1,53 @@
+{
+  "Directors": ["Prabhu Deva", "Sidharth Anand", "Farhad Samji"],
+
+  "Movies": [
+    {
+      "MovieID": 1,
+
+      "MovieName": "Pathan"
+    },
+
+    {
+      "MovieID": 2,
+
+      "MovieName": "Dabang 3"
+    },
+
+    {
+      "MovieID": 3,
+
+      "MovieName": "Kisi Ka bhai Kisi ki Jaan"
+    },
+
+    {
+      "MovieID": 4,
+
+      "MovieName": "Any Body can Dance"
+    }
+  ],
+
+  "Actors": [
+    "Shahrukh Khan",
+
+    "Deepika Padukone",
+
+    "John Abraham",
+
+    "Sonakshi Sinha",
+
+    "Salman Khan",
+
+    "Pooja Hegde",
+
+    "Salman Khan",
+
+    "Prabhu Deva",
+
+    "Punit Pathak",
+
+    "Ganesh Acharya",
+
+    "Noorin sha"
+  ]
+}

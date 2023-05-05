@@ -1,0 +1,65 @@
+[
+  {
+    "MovieID": 1,
+
+    "MovieName": "Pathan",
+
+    "Details": {
+      "DirectorName": "Sidharth Anand",
+
+      "ActorsNames": ["Shahrukh Khan", "Deepika Padukone", "John Abraham"],
+
+      "VideoLink": "https://tutorial.radixind.in/videos/Pathaan.mp4"
+    }
+  },
+
+  {
+    "MovieID": 2,
+
+    "MovieName": "Dabang 3",
+
+    "Details": {
+      "DirectorName": "Prabhu Deva",
+
+      "ActorsNames": ["Sonakshi Sinha", "Salman Khan"],
+
+      "VideoLink": "https://tutorial.radixind.in/videos/KKBKKJ.mp4"
+    }
+  },
+
+  {
+    "MovieID": 3,
+
+    "MovieName": "Kisi Ka bhai Kisi ki Jaan",
+
+    "Details": {
+      "DirectorName": "Farhad Samji",
+
+      "ActorsNames": ["Pooja Hegde", "Salman Khan"],
+
+      "VideoLink": "https://tutorial.radixind.in/videos/Dabaang3.mp4"
+    }
+  },
+
+  {
+    "MovieID": 4,
+
+    "MovieName": "Any Body can Dance",
+
+    "Details": {
+      "DirectorName": "Prabhu Deva",
+
+      "ActorsNames": [
+        "Prabhu Deva",
+
+        "Punit Pathak",
+
+        "Ganesh Acharya",
+
+        "Noorin sha"
+      ],
+
+      "VideoLink": "https://tutorial.radixind.in/videos/abcd.mp4"
+    }
+  }
+]

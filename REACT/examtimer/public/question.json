@@ -1,0 +1,36 @@
+[
+  {
+    "QuestionID": 1,
+
+    "Description": "What is the capital of India",
+
+    "Options": ["Delhi", "Surat", "Calcutta", "Banglore"],
+
+    "Answer": "Delhi"
+  },
+
+  {
+    "QuestionID": 2,
+
+    "Description": "What is the prime minister name",
+
+    "Options": [
+      "Narendra Modi",
+      "Rahul Gandhi",
+      "Amit Shah",
+      "Yogi Aditya Nath"
+    ],
+
+    "Answer": "Narendra Modi"
+  },
+
+  {
+    "QuestionID": 2,
+
+    "Description": "What is the National Bird of India",
+
+    "Options": ["Hen", "Peacock", "Sparrow", "Crow"],
+
+    "Answer": "Peacock"
+  }
+]

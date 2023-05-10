@@ -1,0 +1,105 @@
+{
+  "States": [
+    {
+      "StateID": 1,
+
+      "StateName": "Gujarat"
+    },
+
+    {
+      "StateID": 2,
+
+      "StateName": "Maharastra"
+    },
+
+    {
+      "StateID": 3,
+
+      "StateName": "Panjab"
+    }
+  ],
+
+  "Cities": [
+    {
+      "CityID": 1,
+
+      "Name": "Ahmedabad",
+
+      "StateID": 1
+    },
+
+    {
+      "CityID": 2,
+
+      "StateName": "Surat",
+
+      "StateID": 1
+    },
+
+    {
+      "CityID": 3,
+
+      "StateName": "Baroda",
+
+      "StateID": 1
+    },
+
+    {
+      "CityID": 4,
+
+      "StateName": "Mumbai",
+
+      "StateID": 2
+    },
+
+    {
+      "CityID": 5,
+
+      "StateName": "Pune",
+
+      "StateID": 2
+    },
+
+    {
+      "CityID": 6,
+
+      "StateName": "Amritsar",
+
+      "StateID": 3
+    },
+
+    {
+      "CityID": 7,
+
+      "StateName": "Ladhiana",
+
+      "StateID": 3
+    }
+  ],
+
+  "users": [
+    {
+      "userName": "Reena",
+
+      "password": "password",
+
+      "role": "admin"
+    },
+
+    {
+      "userName": "ronit",
+
+      "password": "ronit",
+
+      "role": "staff"
+    },
+
+    {
+      "userName": "Jay",
+
+      "password": "Jay",
+
+      "role": "staff"
+    }
+  ]
+}

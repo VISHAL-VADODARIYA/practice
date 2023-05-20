@@ -10,11 +10,11 @@ import ProductsDetail from "./pages/ProductsDetail";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/root",
+      path: "/",
       element: <Root />,
       errorElement:<Error />,
       children: [
-        { path: "", element: <Home /> },
+        { index: true, element: <Home /> },
         { path: "products", element: <Products /> },
         { path: "products/:productId", element: <ProductsDetail /> },
       ],

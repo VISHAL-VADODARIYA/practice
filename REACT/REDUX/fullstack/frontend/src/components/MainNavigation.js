@@ -1,13 +1,17 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from "react-router-dom";
 
-import classes from './MainNavigation.module.css';
-import NewsletterSignup from './NewsletterSignup';
+import classes from "./MainNavigation.module.css";
+import NewsletterSignup from "./NewsletterSignup";
 
 function MainNavigation() {
+  const navigate = useNavigate();
   return (
     <header className={classes.header}>
       <nav>
         <ul className={classes.list}>
+          <li>
+            <NavLink onClick={() => navigate(-1)}>Go Back</NavLink>
+          </li>
           <li>
             <NavLink
               to="/"

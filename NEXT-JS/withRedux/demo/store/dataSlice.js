@@ -1,11 +1,12 @@
+'use client';
 const { createSlice } = require("@reduxjs/toolkit");
 
 const dataSlice = createSlice({
     name:'data',
-    initialState : [],
+    initialState : {data:[]},
     reducers:{
         fetchData(state,action){
-            state = action.payload
+            state.data = action.payload
         }
     }
 })
